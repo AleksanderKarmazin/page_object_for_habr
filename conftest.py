@@ -3,6 +3,6 @@ from selenium import webdriver
 
 @pytest.fixture(scope="session")
 def browser():
-    driver = webdriver.Chrome(executable_path="./chromedriver")
+    driver = webdriver.Firefox(executable_path='C:/Tools/geckodriver.exe')
     yield driver
     driver.quit()
