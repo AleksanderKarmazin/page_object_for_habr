@@ -20,7 +20,7 @@ class Test_Class_01():
         login.enter_username("testcaseqa5@gmail.com")
         login.enter_password("123456")
         login.click_login()
-        
+
         homepage = HomePage(driver)
         homepage.open_profile_menu()
         homepage.click_logout()
